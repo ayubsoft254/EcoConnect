@@ -6,12 +6,14 @@
     <title>Dashboard - EcoConnect</title>
     <!-- Add your CSS links here -->
     <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/caca41acea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation bar -->
     <nav>
         <div class="nav">
-            <h1 class="eco">EcoConnect</style></h1>
+            <div class="eco">EcoConnect</div>
             <div class="navlinks">
                 <ul>
                 <li><a href="#">Home</a></li>
@@ -26,7 +28,7 @@
                 <input type="text" placeholder="search">
             </form>
             
-            <div> <img src="/static/avatar.jpg" alt=""></div>
+             <div> <img src="/static/avatar.jpg" alt=""></div> 
         </div>
     </nav>
 
@@ -35,8 +37,45 @@
  <div class="main"> 
     <section id="resources">
         <div class="container">
-            <!-- <h2>Resource Sharing</h2> -->
-            <!-- Add resource sharing functionality and content here -->
+            <div class="resources">
+                <h2>Available Resources</h2>
+                <p>This are the only available resources that can be shared at the moment.</p>
+           <div class="available-resources">
+            <div class="tractor">
+                <div id="head-content">
+                    <h3>Row Crop Tracto</h3>
+                  <button type="button">Enquire</button>
+                  </div>     <div class="desc">
+        <div id="image">
+            <img src="/static/tractor.jpg" alt="tractor">
+        </div>
+        <div class="content">
+            Specially designed for row crop planting and filed work.
+            <br>Between <span>145-410 HP</span> (based on model) <br>
+            Available in <span>wheeled, 2-track, or 4-track</span> styles.
+        </div>    
+    </div>
+    <div class="tent">
+<div id="head-content">
+  <h3>Community Tent</h3>
+<button type="button">Enquire</button>
+</div>        
+<div class="desc">
+<div id="image">
+    <img src="/static/tent.jpg" alt="tent">
+</div>
+<div class="content">
+    Offers temporary shelter against rain and sun made out of
+    <br> heavy material such as <span>canvas.</span><br>
+    It only available for <span>community event</span> purpose.
+</div>
+</div>
+
+    </div>
+    
+            </div>
+           </div>
+            </div>
         </div>
     </section>
 
@@ -48,27 +87,33 @@
                
             <div class="description">
                 <h3>Farming</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Nairobi</p>
+                <p>Improving farming<br> for local villagers.</p>
 
             </div>    
             <div class="calender">
-                <h3>20</h3>
+                <div id="dates">
+                <h4>10</h4>
                 <p>april</p>
+                </div>
+                <h4 class="location"> <i class="fa-solid fa-location-arrow"></i> Nairobi</h4>
+
             </div>
-            
             </div>
-            <div class="event-main">
+            <div class="event-main" id="event2">
                
                 <div class="description">
-                    <h3>Farming</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Nairobi</p>
-    
+                    <h3>Technology</h3>
+                    <p>Importance of tech <br> community.</p>    
                 </div>    
                 <div class="calender">
-                    <h3>20</h3>
+
+                    <div id="dates">
+                     <h4>20</h4>
                     <p>april</p>
+                    </div>
+            
+                    <h4 class="location"> <i class="fa-solid fa-location-arrow"></i> Nairobi</h4>
+
                 </div>
                 
                 </div>
