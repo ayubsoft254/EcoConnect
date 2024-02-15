@@ -4,10 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Events</title>
-  <link rel="stylesheet" href="/static/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/caca41acea.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="/static/event.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/caca41acea.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<nav>
@@ -15,10 +14,10 @@
             <div class="eco">EcoConnect</div>
             <div class="navlinks">
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="dashboard.html">resources</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="discusion.html">discussions</a></li>
+                    <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+                    <li><a href="dashboard.html"><i class="fa-solid fa-briefcase"></i> resources</a></li>
+                    <li><a href=""><i class="fa-solid fa-calendar"></i> events</a></li>
+                    <li><a href="discusion.html"><i class="fa-solid fa-comments"></i> discussions</a></li>
                 <!-- Add more navigation links as needed -->
                 <!-- <li><a href="#">Logout</a></li> -->
             </ul>
@@ -33,45 +32,68 @@
 
  <section id="event-container">
         <div class="event-head">
-            <h2>Event Management</h2>
-            <div class="event-main">
+            <h2>Event Planning</h2>
+            <p class="p">This are the events that are scheduled to happen soon.</p>
+            <div class="eventContent">
+                <div class="event-main"> 
+                    <div class="description">
+                        <h3>Farming</h3>
+                        <p>Improving farming<br> for local villagers.</p>
+                    </div>    
+                    <div class="calender">
+                        <div id="dates">
+                        <h4>10</h4>
+                        <p>march</p>
+                        </div>
+                        <h4 class="location"> <i class="fa-solid fa-location-dot"></i> Nairobi</h4>
+                    </div>
+                    </div>
+            </div>
+            <div class="eventContent-2">
+                <div class="event-main"> 
+                    <div class="description">
+                        <h3>Technology</h3>
+                        <p>Importance of learning<br> Technology.</p>
+        
+                    </div>    
+                    <div class="calender">
+                        <div id="dates">
+                        <h4>15</h4>
+                        <p>april</p>
+                        </div>
+                        <h4 class="location"> <i class="fa-solid fa-location-dot"></i> Nairobi</h4>
+        
+                    </div>
+                    </div>
+            </div>
+       <div class="eventContent-3">
+        <div class="event-main" id="event2">
                
             <div class="description">
-                <h3>Farming</h3>
-                <p>Improving farming<br> for local villagers.</p>
-
+                <h3>Health</h3>
+                <p>Community Health <br>Awareness.</p>    
             </div>    
             <div class="calender">
+
                 <div id="dates">
-                <h4>10</h4>
-                <p>april</p>
+                 <h4>15</h4>
+                <p>june</p>
                 </div>
-                <h4 class="location"> <i class="fa-solid fa-location-arrow"></i> Nairobi</h4>
+        
+                <h4 class="location"> <i class="fa-solid fa-location-dot"></i> Nairobi</h4>
 
             </div>
+            
             </div>
-            <div class="event-main" id="event2">
-               
-                <div class="description">
-                    <h3>Technology</h3>
-                    <p>Importance of tech <br> community.</p>    
-                </div>    
-                <div class="calender">
-
-                    <div id="dates">
-                     <h4>20</h4>
-                    <p>april</p>
-                    </div>
-            
-                    <h4 class="location"> <i class="fa-solid fa-location-arrow"></i> Nairobi</h4>
-
-                </div>
-                
-                </div>
-            
+       </div> 
             <!-- Add event management functionality and content here -->
         </div>
     </section>
+    <footer>
+        <div class="container">
+             <p>&copy; 2024 EcoConnect. All rights reserved.</p> 
+        </div>
+    </footer>
 
 </body>
 </html>
