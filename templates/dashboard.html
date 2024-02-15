@@ -6,18 +6,21 @@
     <title>Dashboard - EcoConnect</title>
     <!-- Add your CSS links here -->
     <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/caca41acea.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navigation bar -->
+    
     <nav>
         <div class="nav">
-            <h1 class="eco">EcoConnect</style></h1>
+            <div class="eco">EcoConnect</div>
             <div class="navlinks">
                 <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">resources</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="#">discussions</a></li>
+                <li><a href="events.html">events</a></li>
+                <li><a href="discusion.html">discussions</a></li>
                 <!-- Add more navigation links as needed -->
                 <!-- <li><a href="#">Logout</a></li> -->
             </ul>
@@ -26,56 +29,84 @@
                 <input type="text" placeholder="search">
             </form>
             
-            <div> <img src="/static/avatar.jpg" alt=""></div>
+             <div> <img src="/static/avatar.jpg" alt=""></div> 
         </div>
     </nav>
 
-
+<center>
     <!-- Resource Sharing -->
+    <div class="content1">
  <div class="main"> 
     <section id="resources">
         <div class="container">
-            <!-- <h2>Resource Sharing</h2> -->
-            <!-- Add resource sharing functionality and content here -->
-        </div>
-    </section>
-
-    <!-- Event Management -->
-    <section id="event-container">
-        <div class="event-head">
-            <h2>Event Management</h2>
-            <div class="event-main">
-               
-            <div class="description">
-                <h3>Farming</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Nairobi</p>
-
-            </div>    
-            <div class="calender">
-                <h3>20</h3>
-                <p>april</p>
-            </div>
+            <div class="resources">
+                <h2>Available Resources</h2>
             
-            </div>
-            <div class="event-main">
-               
-                <div class="description">
-                    <h3>Farming</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                    <p>Nairobi</p>
+                <p>This are the only available resources that can be shared at the moment.</p>
+           <div class="available-resources">
+            <div class="tractor">
+                <div id="head-content">
+                    <h3>Row Crop Tractor</h3>
+                  
+                  </div>     <div class="desc">
+        <div id="image">
+            <img src="/static/tractor.jpg" alt="tractor">
+        </div>
+        <div class="content">
+            Specially designed for row crop planting and filed work.
+            Between <span>145-410 HP</span> (based on model) 
+            Available in <span>wheeled, 2-track, or 4-track</span> styles. <br> <br>
+            <button>Enquire</button> 
+            
+        </div> 
     
-                </div>    
-                <div class="calender">
-                    <h3>20</h3>
-                    <p>april</p>
-                </div>
-                
-                </div>
+            </div>
+           </div>
+            <div class="laptop">
+                <div id="head-content">
+                    <h3>Learnig laptop</h3>
+                  
+                  </div>     <div class="desc">
+        <div id="image">
+            <img src="/static/laptop.jpg" alt="laptop">
+        </div>
+        <div class="content">
+            Community laptops that used by studebts for <span>Learnig</span> purpose.
+            Consist of powerful processor for faster research. <br><br>
+            <button>Enquire</button> 
             
-            <!-- Add event management functionality and content here -->
+        </div> 
+          
+    </div>
+
+    
+
+    <div class="tent">
+<div id="head-content">
+  <h3>Community Tent</h3>
+<!-- <button type="button">Enquire</button> -->
+</div>        
+<div class="desc">
+<div id="image">
+    <img src="/static/tent.jpg" alt="tent">
+</div>
+<div class="content">
+    Offers temporary shelter against rain and sun made out of
+    heavy material such as <span>canvas.</span>
+    It only available for <span>community event</span> purpose. <br> <br>
+    <button>Enquire</button> 
+</div>
+</div>
+
+
+    </div>
+
+            </div>
         </div>
     </section>
+    </center>
+    <!-- Event Management -->
+   
  </div>
 
     <!-- Footer -->
@@ -84,5 +115,7 @@
             <!-- <p>&copy; 2024 EcoConnect. All rights reserved.</p> -->
         </div>
     </footer>
+    </div>
+    
 </body>
 </html>
